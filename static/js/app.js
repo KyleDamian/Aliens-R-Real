@@ -11,7 +11,7 @@ console.log(data)
 data.forEach((sighting) => {
     var row = tbody.append("tr");
     Object.entries(sighting).forEach(([key, value]) => {
-      var cell = tbody.append("td");
+      var cell = row.append("td");
       cell.text(value);
     });
 });
@@ -37,12 +37,17 @@ submit.on("click", function() {
     console.log(inputValue);
     console.log(filteredData);
 
-    //clear rows of table
-    
+    //clear initial table data
+    tbody.html("");
 
-    //append filtered rows to table
-
-        
+    //for loop to add filtered data as rows to the table
+    filteredData.forEach((sighting) => {
+        var row = tbody.append("tr");
+        Object.entries(sighting).forEach(([key, value]) => {
+          var cell = row.append("td");
+          cell.text(value);
+        });
+    });     
 });
 
 
