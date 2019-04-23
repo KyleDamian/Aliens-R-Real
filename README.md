@@ -1,2 +1,4 @@
 # Aliens-R-Real
-Created a website that uses javascript to create the functionality to search through a set of data and pull back the results of only the provided search criteria. Created a simple search box that filters the records by the date provided.
+Aliens-R-Real is a website that displays a dataset of UFO sightings. 
+
+Using javascript code a table was appended to the webpage displaying all of the results. A search box was also created allowing users to search for specific records in the dataset by inputting a specific date to search by.
